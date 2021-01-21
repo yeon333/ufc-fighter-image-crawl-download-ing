@@ -56,16 +56,7 @@ while True:
 	
 		driver.get("https://www.google.co.kr/imghp?hl=ko&tab=wi&ogbl")
 		elem=driver.find_element_by_name("q")
-		time.sleep(5)
 		elem.send_keys(anchor.get_text())
-		time.sleep(5)
-		#driver.find_element_by_xpath("/html/body/div[2]/div[2]/div[2]/form/div[2]/div[1]/div[1]/button").click()
-		#elem.send_keys(Keys.RETURN)
-		#driver.find_element_by_css_selector("Tg7LZd").click()
-		#try:
-		#	elem.send_keys(Keys.RETURN)
-		#except:
-		#	pass
 		
 		time.sleep(3)
 
