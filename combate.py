@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*- 
-from selenium import webdriver
+from selenium import webdriver  #pip install selenium
 from selenium.webdriver.common.keys import Keys
 import time
 #import urllib.request
-import requests
+import requests  # pip install requests
 #beautiful soup
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
@@ -35,7 +35,7 @@ while True:
 	last_height =new_height
 
 html=driver1.page_source 
-soup=BeautifulSoup(html,'lxml')  
+soup=BeautifulSoup(html,'lxml')   #pip install lxml
 #soup = BeautifulSoup(html, 'html.parser') 
 athlete_num = 1 #for counting athlete print 
 for anchor in soup.select("div.c-listing-athlete-flipcard__text__back span.c-listing-athlete__name"):
